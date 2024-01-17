@@ -1,0 +1,105 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #444;
+  height: 100%;
+  width: 100%;
+  margin: 0; /* Remove default margin */
+  background-color: #f7f7ff; /* Set background color here */
+}
+
+.main {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-weight: bold;
+  text-align: center; /* Center the text */
+}
+
+.login-container {
+  padding-top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightcyan;
+  width: 80%; /* Adjust width for smaller screens */
+  max-width: 400px; /* Set a maximum width */
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.login-box {
+  text-align: center; /* Center the content */
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+input {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: calc(100% - 30px); /* Make input width 100% */
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+}
+
+.forgot-password {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.forgot-password-text {
+  color: #666;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.forgot-password-text:hover {
+  color: #cd96d8; /* Change the color for the hover effect */
+}
+
+button {
+  margin-top: 5%;
+  background-color: #cd96d8;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #cd96d8;
+}
+
+/* Media Queries for multiple devices */
+@media screen and (max-width: 600px) {
+  .login-container {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    padding-left: 0; /* Remove padding for smaller screens */
+  }
+}
